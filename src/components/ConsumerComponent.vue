@@ -6,32 +6,23 @@
     >
         <v-card-title>
             <div>
-                {{title}}
+                {{consumer.title}}
             </div>
         </v-card-title>
         <v-card-text>
             <div>
-                {{message}}
+                {{consumer.message}}
             </div>
         </v-card-text>
     </v-card>
 </template>
 
 <script>
+
 export default {
-    name: "ProducerComponent",
+    name: "ConsumerComponent",
     props: [
-        "title",
-        "message"
-    ],
-    data() {
-        return {
-            id: ''
-        }
-    },
-    created: function() {
-        console.log("Producer is in the building, wuba luba dub dub!");
-        this.id = Math.random() * 1000;
-    }
+        "consumer",
+    ]
 }
 </script>
