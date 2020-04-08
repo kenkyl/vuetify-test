@@ -1,5 +1,5 @@
 <template>
-    <DarkLayout />
+    <DarkLayout title="Redis and Vuetify"/>
 </template>
 
 <script>
